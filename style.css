@@ -96,7 +96,7 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 35px;
     font-weight: 600;
 }
@@ -114,13 +114,16 @@ section .title::after{
 .navbar .menu li a{
     display: block;
     color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 900;
     margin-left: 25px;
     transition: color 0.3s ease;
+    text-shadow: 2px 2px #000;
 }
 .navbar .menu li a:hover{
     color: crimson;
+    text-shadow: 0 0 ;
+
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -165,7 +168,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("r.jpg") no-repeat center;
+    background: url("2.jpg") no-repeat bottom;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -566,7 +569,10 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-
+.heard 
+{
+    font-size: 34px;
+ }
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -579,7 +585,11 @@ footer span a:hover{
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
+    } 
+    .services .max-width .carda {
+        margin: auto;
     }
+
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -587,7 +597,7 @@ footer span a:hover{
         z-index: 999;
     }
     .menu-btn i.active:before{
-        content: "\f00d";
+        content: "/f00d";
     }
     .navbar .menu{
         position: fixed;
