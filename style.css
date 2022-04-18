@@ -597,7 +597,8 @@ footer span a:hover{
         z-index: 999;
     }
     .menu-btn i.active:before{
-        content: "/f00d";
+        content: "X";
+        font-family: sans-serif;
     }
     .navbar .menu{
         position: fixed;
